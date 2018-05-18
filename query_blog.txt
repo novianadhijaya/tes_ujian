@@ -1,0 +1,4 @@
+SELECT * FROM posts p
+LEFT JOIN users u ON u.id=p.createBy
+LEFT JOIN comments c ON c.postId =  p.id
+WHERE p.id = 1
